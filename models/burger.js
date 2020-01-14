@@ -7,7 +7,7 @@ module.exports = {
     insert: function(name) {
         orm.insertOne(name)
     },
-    getAll: function() {
-        return orm.selectAll()
+    getAll: function(cb) {
+        orm.selectAll(cb)
     }
 }
